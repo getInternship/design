@@ -1,0 +1,221 @@
+ @CHARSET "ISO-8859-1";
+/* Reset CSS
+ * --------------------------------------- */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {padding: 0; margin: 0;}
+a{text-decoration:none;}
+table {border-spacing:0;}
+fieldset,img {border:0;}
+address,caption,cite,code,dfn,em,strong,th,var {font-weight: normal; font-style: normal;}
+strong{font-weight: bold;}
+ol,ul {list-style: none; margin:0; padding:0;} 
+caption,th {text-align: left;}
+h1,h2,h3,h4,h5,h6 {font-weight:normal;font-size:100%;margin:0;padding:0;color:#444;}
+q:before,q:after {content:'';}
+abbr,acronym {border: 0;}
+
+/* Custom CSS
+ * --------------------------------------- */
+body, html { margin:0; padding:0; background: #fff4d4; font-family: arial,helvetica;}
+img {outline: 0; max-width: 100%; height: auto;}
+a, a:hover {text-decoration: none;}
+
+#superContainer {height:100%; position:relative;}
+.scrollable{overflow:scroll;}
+.easing{ -webkit-transition: all 0.7s ease-out; -moz-transition: all 0.7s ease-out; -o-transition: all 0.7s ease-out;
+    transition: all 0.7s ease-out;}
+.wrap{margin-left: auto;margin-right: auto;width: 80%; position: relative;} 
+
+#menu {position: fixed; right: 3%; top:35%; z-index: 70; list-style: none; margin: 0; padding: 0;}
+#menu li {padding: 0; text-align:center; line-height: 4em;}
+#menu li a { padding:2%; background: transparent; color:#3979b1; opacity: 0.2;line-height: 1em;}
+/*#menu li:first-child a{background:transparent url(../img/home.png) no-repeat 50% 45%;}
+#menu li:nth-child(2) a {background:transparent url(../img/rupee.png) no-repeat 50% 45% ;}
+#menu li:nth-child(3) a {background:transparent url(../img/question.png) no-repeat 50% 45%;}
+#menu li:last-child a{background:transparent url(../img/sign-in.png) no-repeat 50% 45%;}*/
+#menu li a:hover{opacity: 1;}
+#menu li.active a{opacity: 1;}
+
+.section{position: relative; text-align:center; padding-top:5% !important; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; 
+         box-sizing: border-box;}
+
+.intro {width:80%; margin:0 auto;}
+
+.intro.home {padding-top:7em !important;}
+
+.yellow-bg {background:#ffefbe; border-radius:0.5em; padding:3em 1em;}
+
+.home li { display:inline-block; width:auto; vertical-align:top;}
+.home li:first-child, .home li:last-child {width:15%;}
+.home li:nth-child(2) {width:60%; background:transparent url(../img/batman.png) no-repeat 79% 20%; background-size: 50%;}
+.home li:nth-child(2):hover {background:transparent url(../img/batman-h.png) no-repeat 79% 20%; cursor:pointer;background-size: 50%;}
+.home li:nth-child(2) h1 {color:#ff5412;font-size:10em;line-height:1em;font-weight:bold;vertical-align:top;margin:0;padding-top:0.6em;}
+
+.home p {color:#ffb345; font-size:1.5em; text-align:right; padding-right:3%; margin:1.5% 0;}
+.home p span {padding:15px; background:transparent url(../img/heart-icon.png) no-repeat 50% 55%; background-size: 100%; }
+.home p span:hover {background:transparent url(../img/heart-icon-h.png) no-repeat 50% 55%; cursor:pointer; background-size: 100%;}
+/*
+span#whiteboard-t {margin-left:1px;}
+span#humour-t {margin-left:1px;}
+span#long-hours-t {margin-left:1px;}
+*/
+
+.stipend h2 {color:#ff5412;font-size:4em;line-height:1em;font-weight:bold;vertical-align:top; margin:0;padding-top:0.5em; margin:0; padding:0;}
+.stipend h2 img {width:8%;}
+
+ul#stipendTab {width:100%; margin:2.5em auto 1em auto; padding:0;}
+ul#stipendTab li {display:inline-block; width:12%; margin:0 auto; }
+ul#stipendTab li a { display:table-cell; padding:2.5em 4em; text-align:center; vertical-align:middle; cursor:pointer;}
+
+ul#stipendTab li:first-child a  {background:transparent url(../img/calender.png) no-repeat 50%; background-size: 47%;}
+ul#stipendTab li:nth-child(2) a {background:transparent url(../img/money.png) no-repeat 50%; background-size: 78%;}
+ul#stipendTab li:nth-child(3) a {background:transparent url(../img/growth.png) no-repeat 50%; background-size: 46%;}
+ul#stipendTab li:last-child a   {background:transparent url(../img/data-visual.png) no-repeat 50%; background-size: 50%;}
+
+ul#stipendTab li:first-child a:hover,ul#stipendTab li:first-child.active a{background:transparent url(../img/calender-h.png) no-repeat 50%; 
+ background-size: 47%;}
+ul#stipendTab li:nth-child(2) a:hover,ul#stipendTab li:nth-child(2).active a{background:transparent url(../img/money-h.png) no-repeat 50%;
+ background-size: 78%;}
+ul#stipendTab li:nth-child(3) a:hover,ul#stipendTab li:nth-child(3).active a{background:transparent url(../img/growth-h.png) no-repeat 50%;
+ background-size: 46%;}
+ul#stipendTab li:last-child a:hover,ul#stipendTab li:last-child.active a{background:transparent url(../img/data-visual-h.png) no-repeat 50%; 
+ background-size: 50%;}
+
+
+.tab-content p.mini {width:80%; background:#ffefbe; border-radius:0.2em; color:#ff5412; font-size:0.65em; text-align:center; margin:2% auto; padding:0.5em;}
+.tab-content p.mini img {padding:0 0.5em;}
+.tab-content p.mini img.first {width:12%;}
+.tab-content p.mini img.second {width:16%;}
+.tab-content p.mini img.third {width:16%;}
+.tab-content p.mini img.last {width:20%;}
+
+.apply h2 {color:#ff5412;font-size:4em;line-height:1em;font-weight:bold;vertical-align:top; margin:0;padding-top:0.5em; margin:0; padding:0;}
+.apply h2 img {width:8%;}
+
+ul#applyTab {width:100%; margin:2.5em auto 1em auto; padding:0;}
+ul#applyTab li {display:inline-block; width:12%; margin:0 auto; }
+ul#applyTab li a { display:table-cell; padding:2.5em 5em; text-align:center; vertical-align:middle; cursor:pointer;}
+
+ul#applyTab li:first-child a  {background:transparent url(../img/apply.png) no-repeat 50%; background-size: 32%;}
+ul#applyTab li:nth-child(2) a {background:transparent url(../img/repo.png) no-repeat 50%; background-size: 28%;}
+ul#applyTab li:nth-child(3) a {background:transparent url(../img/fork.png) no-repeat 50%; background-size: 24%;}
+ul#applyTab li:nth-child(4) a {background:transparent url(../img/clone.png) no-repeat 50%; background-size: 38%;}
+ul#applyTab li:nth-child(5) a {background:transparent url(../img/pull.png) no-repeat 50%; background-size: 27%;}
+ul#applyTab li:last-child a   {background:transparent url(../img/merge.png) no-repeat 50%; background-size: 27%;}
+
+ul#applyTab li:first-child a:hover,ul#applyTab li:first-child.active a{background:transparent url(../img/apply-h.png) no-repeat 50%; 
+ background-size: 32%;}
+ul#applyTab li:nth-child(2) a:hover,ul#applyTab li:nth-child(2).active a{background:transparent url(../img/repo-h.png) no-repeat 50%;
+ background-size: 28%;}
+ ul#applyTab li:nth-child(3) a:hover,ul#applyTab li:nth-child(3).active a{background:transparent url(../img/fork-h.png) no-repeat 50%;
+ background-size: 24%;}
+ul#applyTab li:nth-child(4) a:hover,ul#applyTab li:nth-child(4).active a{background:transparent url(../img/clone-h.png) no-repeat 50%;
+ background-size: 38%;}
+ul#applyTab li:nth-child(5) a:hover,ul#applyTab li:nth-child(5).active a{background:transparent url(../img/pull-h.png) no-repeat 50%;
+ background-size: 27%;}
+ul#applyTab li:last-child a:hover,ul#applyTab li:last-child.active a{background:transparent url(../img/merge-h.png) no-repeat 50%; 
+ background-size: 27%;}
+
+.tab-content p {color:#ff5412; font-size:0.75em; text-align:center; margin:2.5% auto;}
+.tab-content p a {padding:0 5px; background:#4ffdc8; color:#ff5412; }
+.tab-content p a:hover { background:#ff9229; cursor:pointer; color:#ff5412; }
+
+ul.max-text {width:100%;}
+ul.max-text li { display:inline-block; vertical-align:middle; cursor:pointer; font-size:1.8em; font-weight:bold; color:#ff5412;}
+ul.max-text li:first-child {width:40%;}
+ul.max-text li:last-child {width:50%; border-left:2px solid #ff9229;}
+ul.max-text li img {float:none; vertical-align:middle;}
+ul.max-text li:first-child img {width:18%;}
+ul.max-text li:last-child img {width:15%;}
+
+ul.max-text li:hover {color:#ff9229;}
+
+.packery { max-width: 80%; max-height: 80%; margin:0 auto;counter-reset: item;}
+.packery:after {content: ' ';display: block;clear: both;}
+.item {float: left;}
+.item:hover {cursor:pointer;}
+.item.w1, .item.w2, .item.w3, .item.w4, .item.w5, .item.w6, .item.w7 {text-align:center; }
+
+.item.w1 {width: 30%; height: 400px; background:transparent url(../img/ti1.png) no-repeat center; background-size:95% auto; }
+.item.w2 {width: 20%; height: 400px; overflow:hidden;}
+.item.w3 {width: 50%; height: 200px; background:transparent url(../img/ti3.png) no-repeat center; background-size:65% auto; }
+.item.w4 {width: 25%; height: 200px; background:transparent url(../img/ti4.png) no-repeat center; background-size:55% auto; }
+.item.w5 {width: 30%; height: 200px; background:transparent url(../img/ti5.png) no-repeat center; background-size:50% auto; }
+.item.w6 {width: 45%; height: 200px; background:transparent url(../img/ti6.png) no-repeat center; background-size:66% auto; }
+.item.w7 {width: 25%; height: 400px; background:transparent url(../img/ti7.png) no-repeat center; background-size:84% auto; }
+
+.item.w1:hover {background: #f7e5b0 url(../img/fi1.png) no-repeat center; background-size:95% auto; }
+.item.w2:hover {background: #f0b766; }
+.item.w3:hover {background: #f2d787 url(../img/fi3.png) no-repeat center; background-size:65% auto; }
+.item.w4:hover {background: #fcd564 url(../img/fi4.png) no-repeat center; background-size:55% auto; }
+.item.w5:hover {background: #fcd564 url(../img/fi5.png) no-repeat center; background-size:50% auto; }
+.item.w6:hover {background: #fdcaa4 url(../img/fi6.png) no-repeat center; background-size:66% auto; }
+.item.w7:hover {background: #f7e5b0 url(../img/fi7.png) no-repeat center; background-size:84% auto; }
+
+.item.w1 img { width: 80%; margin:10% auto; }
+.item.w3 img { margin:3% auto;}
+.item.w4 img { width: 50%; margin:5% auto; }
+.item.w5 img { width: 60%; margin:6% auto; }
+.item.w6 img { width: 66%; margin:3% auto; }
+.item.w7 img { width: 84%; margin:15% auto;}
+
+.item p {width:100%; line-height:10px; font-size:6px; padding:5% 10%; text-align: center;  text-align:justify;  overflow: hidden;
+text-overflow:ellipsis;
+-o-text-overflow:ellipsis;
+-ms-text-overflow:ellipsis;
+-moz-binding:url(/ellipsis-xbl.xml#ellipsis) }
+
+
+@media screen and (max-width: 320px) { 
+
+}
+
+@media screen and (max-width: 640px) { 
+
+ul#myTab {width:60%; margin:0;}
+ul#myTab li:first-child a  {background-size: 16%;}
+ul#myTab li:nth-child(2) a {background-size: 14%;}
+ul#myTab li:nth-child(3) a {background-size: 19%;}
+ul#myTab li:nth-child(4) a {background-size: 12%;}
+ul#myTab li:nth-child(5) a {background-size: 13.5%;}
+ul#myTab li:last-child a   {background-size: 13.5%;}
+
+ul#myTab li:first-child a:hover,ul#myTab li:first-child.active a{background-size: 16%;}
+ul#myTab li:nth-child(2) a:hover,ul#myTab li:nth-child(2).active a{background-size: 14%;}
+ul#myTab li:nth-child(3) a:hover,ul#myTab li:nth-child(3).active a{background-size: 19%;}
+ul#myTab li:nth-child(4) a:hover,ul#myTab li:nth-child(4).active a{background-size: 12%;}
+ul#myTab li:nth-child(5) a:hover,ul#myTab li:nth-child(5).active a{background-size: 13.5%;}
+ul#myTab li:last-child a:hover,ul#myTab li:last-child.active a{background-size: 13.5%;}
+
+}
+
+@media screen and (max-width: 800px) { 
+
+
+ul#myTab {width:94%; margin:0; text-align:center;}
+ul#myTab li {display:inline-block; width:12%; margin:0 auto; }
+ul#myTab li a { display:table-cell; padding:2.5em 5em; text-align:center; vertical-align:middle; cursor:pointer;}
+
+ul#myTab li:first-child a  {background-size: 16%;}
+ul#myTab li:nth-child(2) a {background-size: 14%;}
+ul#myTab li:nth-child(3) a {background-size: 19%;}
+ul#myTab li:nth-child(4) a {background-size: 12%;}
+ul#myTab li:nth-child(5) a {background-size: 13.5%;}
+ul#myTab li:last-child a   {background-size: 13.5%;}
+
+ul#myTab li:first-child a:hover,ul#myTab li:first-child.active a{background-size: 16%;}
+ul#myTab li:nth-child(2) a:hover,ul#myTab li:nth-child(2).active a{background-size: 14%;}
+ul#myTab li:nth-child(3) a:hover,ul#myTab li:nth-child(3).active a{background-size: 19%;}
+ul#myTab li:nth-child(4) a:hover,ul#myTab li:nth-child(4).active a{background-size: 12%;}
+ul#myTab li:nth-child(5) a:hover,ul#myTab li:nth-child(5).active a{background-size: 13.5%;}
+ul#myTab li:last-child a:hover,ul#myTab li:last-child.active a{background-size: 13.5%;}
+
+}
+
+@media screen and (max-width: 1024px) { 
+
+}
+	
+@media screen and (max-width: 1028px) { 
+
+}

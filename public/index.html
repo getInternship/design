@@ -1,154 +1,259 @@
 <!DOCTYPE html>
 <html>
 
-<head>		
-	<title>Get intership @ Banglore</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>    
+  <title>Get intership @ Banglore</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="author" content="Infratab.in" />
-	<meta name="description" content="Intership website." />
-	<meta name="keywords"  content="intership in banglore, Html intership in banglore, Javascript intership in banglore, startup career in banglore" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="title" content="Get intership @ Banglore" />
+  <meta name="description" content="Apply for Intership at Banglore" />
+  <meta name="keywords"  content="intership in banglore, Html intership in banglore, Javascript intership in banglore, startup career in banglore" />
 
-	<!-- Bootstrap -->
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Pacifico:400' rel='stylesheet' type='text/css'>
 
-	<!--  LESS -->
-	<link rel="stylesheet/less" type="text/css" href="less/style.less" />
-	<script src="js/less-1.5.0.min.js" type="text/javascript"></script>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css"/>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
+  <!-- FullPage -->
+  <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css"/>
+  <!-- Opentip -->
+  <link rel="stylesheet" type="text/css" href="css/opentip.css" />
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
+  <!--  Less -->
+  <!--  <link rel="stylesheet/less" type="text/css" href="less/style.less" /> -->
+  <!--  <script src="js/less-1.5.0.min.js" type="text/javascript"></script> -->
 
-	<!--  CSS -->
-	<!--<link rel="stylesheet" type="text/css" href="css/style.css" /> -->
+  <!--  jquery  -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+  <!--  Bootstrap  -->
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+
+  <!--  fullPage Javascript - Master -->
+  <script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
+  <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+
+  <script type="text/javascript" src="js/opentip-jquery.js"></script>  
+
+  <script type="text/javascript" src="js/jfade.js"></script>
+
+  <script type="text/javascript" src="js/jquery.fittext.js"></script>
+
+  <!--  Seemless Grid  -->
+  <script type="text/javascript" src='http://packery.metafizzy.co/packery.pkgd.js'></script>
+
+  <script type="text/javascript">
+
+    $(document).ready(function() {
+
+      // fullPage Custom script
+
+      var pepe = $.fn.fullpage({ slidesColor: ['#fff4d4', '#fff4d4', '#fff4d4', '#fff4d4', '#fff4d4'] });  
+
+      // Bootstrap Tooltip
+
+      $('#menu a').tooltip('hide');
+      $('.intro div').tooltip('hide');
+
+      // Bootstrap TAB
+
+      $('#applyTab a:first').tab('show');
+      $('#stipendTab a:first').tab('show');
+
+      // Jfade - On Hover Overlay + Background Opacity + Text
+
+      $('.jfade_image').jfade();
+
+      // Window Resize - Auto Refresh
+
+      $(window).resize(function(){location.reload();}); 
+
+      // opentip - Tooltip trigger & Target
+
+/*      new Opentip("#music-h", "Fun With Music", { target: "#target-element", tipJoint: "bottom" });
+      new Opentip("#data-h", "Select All, Copy & Paste", { target: "#target-element", tipJoint: "bottom" });
+      new Opentip("#whiteboard-h", "Scribble on Whiteboard", { target: "#target-element", tipJoint: "bottom" });
+      new Opentip("#humour-h", "Humour", { target: "#target-element", tipJoint: "bottom" });
+      new Opentip("#argument-h", "Argumentative & Noisy", { target: "#target-element", tipJoint: "bottom" });
+      new Opentip("#long-hours-h", "Non-Standard...Long Hours...", { target: "#target-element", tipJoint: "bottom" });
+      new Opentip("#coffee-h", "Love Coffee", { target: "#target-element", tipJoint: "bottom" }); */ 
+
+      new Opentip("#music-h", "Fun With Music", {target: "#music-t", tipJoint: "bottom"});
+      new Opentip("#data-h", "Select All, Copy & Paste", {target: "#data-t", tipJoint: "bottom"});
+      new Opentip("#whiteboard-h", "Scribble on Whiteboard", {target: "#whiteboard-t", tipJoint: "bottom"});
+      new Opentip("#humour-h", "Humour", {target: "#humour-t", tipJoint: "bottom"});
+      new Opentip("#argument-h", "Argumentative & Noisy", {target: "#argument-t", tipJoint: "bottom"});
+      new Opentip("#long-hours-h", "Non-Standard...Long Hours...", {target: "#long-hours-t", tipJoint: "bottom"});
+      new Opentip("#coffee-h", "Love Coffee", {target: "#coffee-t", tipJoint: "bottom"});
+
+      $("#fittext1").fitText();
+      $("#fittext2").fitText(0.2);
+      $("#fittext3").fitText(0.3);
+      $("#fittext4").fitText(0.4);
+      $("#fittext5").fitText(0.5);
+      $("#fittext6").fitText(0.6);
+      $("#fittext7").fitText(0.7);
+      $("#fittext8").fitText(0.8);
+      $("#fittext9").fitText(0.9);
+      $("#fittext10").fitText(1.0);
+      $("#fittext11").fitText(1.1, { minFontSize: '10em', maxFontSize: '20em' });
+      $("#fittext12").fitText(1.2);
+      $("#fittext121").fitText(1.2);
+      $("#fittext13").fitText(1.3);
+      $("#fittext14").fitText(1.4);
+      $("#fittext15").fitText(1.5);
+      $("#fittext16").fitText(1.6);
+      $("#fittext17").fitText(1.7);
+      $("#fittext18").fitText(1.8);
+      $("#fittext19").fitText(1.9);
+      $("#fittext20").fitText(2.0);
+      $("#fittext130").fitText(13.0);
+
+    });
+
+  </script>
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+  <![endif]-->
+
+  <!--[if IE]>
+    <script type="text/javascript">
+       var console = { log: function() {} };  
+    </script>
+  <![endif]-->
+
+<script type="text/javascript"> 
+
+</script>
 
 </head>
 <body>
 
-<div id="wrapper">
+<section id="fittext130">
+<ul id="menu">
+	<li data-menuanchor="home"><a href="#home" data-toggle="tooltip" data-placement="left" title="Home"><i class="fa fa-home fa-3x"></i></a></li>
+	<li data-menuanchor="stipend"><a href="#stipend" data-toggle="tooltip" data-placement="left" title="Stipend"><i class="fa fa-rupee fa-3x"></i></a></li>
+	<li data-menuanchor="life@infratab"><a href="#life@infratab" data-toggle="tooltip" data-placement="left" title="Life&nbsp;@&nbsp;infratab"><i class="fa fa-question fa-3x"></i></a></li>
+	<li data-menuanchor="apply"><a href="#apply" data-toggle="tooltip" data-placement="left" title="Apply"><i class="fa fa-group fa-2x"></i></a></li>
+</ul>
+</section>
 
-	<article class="section one" id="article1">
+<div class="section" id="section0">
 
-		<h1>Home</h1>
-
-		<section class="h">
-
-			<ul class="home">
-				<li><img src="img/batman.jpg" width="200" height="300" alt="Batman Image" align="left"></li>
-				<li><h2>Even <span>batman</span> <br /> needs an intern</h2></li>
-				<li><img src="img/robin.jpg" width="200" height="300" alt="Robin Image" align="right"></li>
-			</ul>
-
-		</section>
-
-		<p>infratab <span>&nbsp;</span> interns</p>
-
-	</article>
-
-	<article class="section" id="article2">
-
-		<h1>Stipend</h1>
-
-		<section class="a">
-			<h2>Stipend</h2>
-		</section>
-
-	</article>
-
-	<article class="section" id="article3">
-
-		<h1>Life @ Infratab</h1>
-
-		<div class="packery js-packery l" data-packery-options='{ "isOriginTop": true }'>
-
-		    <div class="item w1"></div>
-		    
-		    <div class="item w2">
-		      <p name="box-content" id="box-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat,</p>
-		    </div>
-		    <div class="item w3"></div>
-		    <div class="item w4"></div>
-		    <div class="item w5"></div>
-		    <div class="item w6"></div>
-		    <div class="item w7"></div>
-			 
-		</div>
-
-	</article>
-
-	<article class="section four" id="article4">
-
-		<h1>Apply</h1>
-
-		<section class="a">
-
-			<h2>How to apply <a href="#"><img src="img/github-octocat.png" width="120" height="117" alt="github octocat Image"></a></h2>
-
-			<ul class="apply" id="myTab">
-				<li><a href="#Apply" data-toggle="tab"><img src="img/apply.png" width="53" height="60" alt=""></a></li>
-				<li><a href="#Repo" data-toggle="tab"><img src="img/repo.png" width="47" height="60" alt=""></a></li>
-				<li><a href="#Clone" data-toggle="tab"><img src="img/clone.png" width="72" height="60" alt=""></a></li>
-				<li><a href="#Fork" data-toggle="tab"><img src="img/fork.png" width="37" height="60" alt=""></a></li>
-				<li><a href="#Pull" data-toggle="tab"><img src="img/pull.png" width="42" height="60" alt=""></a></li>
-				<li><a href="#Merge" data-toggle="tab"><img src="img/merge.png" width="46" height="60" alt=""></a></li>
-			</ul>
-		</section>
-
-		<section class="tab-content">
-			<div class="tab-pane fade active" id="Apply"><p>Go to <span>Github</span> &amp; Create your account</p></div>
-			<div class="tab-pane fade" id="Repo"><p>Go to <span>Repo</span> &amp; Do something </p></div>
-			<div class="tab-pane fade" id="Clone"><p>Go to <span>Clone</span> &amp; Do something </p></div>
-			<div class="tab-pane fade" id="Fork"><p>Go to <span>Fork</span> &amp; Do something </p></div>
-			<div class="tab-pane fade" id="Pull"><p>Go to <span>Pull</span> &amp; Do something </p></div>
-			<div class="tab-pane fade" id="Merge"><p>Go to <span>Merge</span> &amp; Do something </p></div>
-		</section>	
-
-		<section>
-			<ul class="max-text">
-				<li><img src="img/max-repo.png" width="95" height="127" alt=""> Dev</li>
-				<li><img src="img/max-repo.png" width="95" height="127" alt=""> Design</li>
-			</ul>
-		</section>
-
-	</article>
-
+  <div class="intro home">
+      <ul class="yellow-bg">
+        <li><img src="img/batman.jpg" width="200" height="300" alt="Batman Image" align="left"></li>
+        <li><h1 id="fittext8">Even <span>batman</span> <br /> needs an intern</h1 ></li>
+        <li><img src="img/robin.jpg" width="200" height="300" alt="Robin Image" align="right"></li>
+      </ul>
+       <p id="fittext11">infratab <span>&nbsp;</span> interns</p>
+  </div>  
 </div>
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://code.jquery.com/jquery.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="bootstrap/js/bootstrap.min.js"></script>
+<div class="section" id="section1">
+	<div class="intro stipend">
 
-<script type="text/javascript">
-	$('#myTab a').click(function (e) {
-	  e.preventDefault()
-	  $(this).tab('show')
-	})
-</script>
+        <section class="yellow-bg">
 
-<!--
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
--->
+          <h2 id="fittext12">Apprenticeship</h2>
 
-<!--  For Page Scroll	 -->	
-<script type="text/javascript" src="js/page-scroll-min.js"></script>
-<script type="text/javascript" src="js/auto-page-scroll.js"></script>
+          <ul id="stipendTab">
+            <li><a href="#one" data-toggle="tab"></a></li>
+            <li><a href="#two" data-toggle="tab"></a></li>
+            <li><a href="#three" data-toggle="tab"></a></li>
+            <li><a href="#Four" data-toggle="tab"></a></li>
+          </ul>
+        </section>
 
-<!--  Scroll Position Indicator -->
-<script src='http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js'></script>
-<script type="text/javascript" src="js/scroll-position-indicator.js"></script>
+        <section class="tab-content" id="fittext19">
 
-<!--  Seemless Grid	 -->
-<script src='http://packery.metafizzy.co/packery.pkgd.js'></script>
+          <div class="tab-pane fade active" id="one">
+          	<p>First month is probation</p>
+          	<p class="mini">and is only <img src="img/calender-3.png" class="first" alt=""> days a week</p>
+          </div>
 
-<!--  Copy to Clipboard	 -->
+          <div class="tab-pane fade" id="two">
+          	<p>Starts from &#8377;12,000/- per month</p>
+          	<p class="mini">you are very good? <img src="img/rupee-img.png" class="second" alt=""> stipend is negotiable</p>
+          </div>
+
+          <div class="tab-pane fade" id="three">
+          	<p>Minimum 2 months. You can go on for ever</p>
+          	<p class="mini">stipend increases by <img src="img/500-rupee.png" class="third" alt=""> every month after the probation</p>
+          </div>
+
+          <div class="tab-pane fade" id="Four">
+          	<p>Work is in data visualization</p>
+          	<p class="mini" style="line-height:120px;">can result in <img src="img/final-img.png" class="last" alt=""> a full time position</p>
+          </div>
+
+        </section>  
+
+	</div>		
+</div>
+
+<div class="section" id="section2">
+	<div class="intro packery js-packery" data-packery-options='{ "isOriginTop": true }'>
+
+        <div id="music-h" class="item w1 jfade_image"><span id="music-t"></span></div>        
+        <div id="fittext7" class="item w2 jfade_image"><span id="data-t"></span>
+          <p id="data-h" name="box-content" id="box-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.</p>
+        </div>
+        <div id="whiteboard-h" class="item w3 jfade_image"><span id="whiteboard-t"></span></div>
+        <div id="humour-h" class="item w4 jfade_image"><span id="humour-t"></span></div>
+        <div id="argument-h" class="item w5 jfade_image"><span id="argument-t"></span></div>
+        <div id="long-hours-h" class="item w6 jfade_image"><span id="long-hours-t"></span></div>
+        <div id="coffee-h" class="item w7 jfade_image"><span id="coffee-t"></span></div>
+
+  </div>
+</div>
+
+<div class="section" id="section3">
+  <div class="intro apply">
+
+        <section class="yellow-bg">
+
+          <h2 id="fittext121">Apply <a href="#"><img src="img/github-octocat.png" alt="github octocat Image"></a></h2>
+
+          <ul id="applyTab">
+            <li><a href="#Apply" data-toggle="tab"></a></li>
+            <li><a href="#Repo" data-toggle="tab"></a></li>
+            <li><a href="#Fork" data-toggle="tab"></a></li>
+            <li><a href="#Clone" data-toggle="tab"></a></li>
+            <li><a href="#Pull" data-toggle="tab"></a></li>
+            <li><a href="#Merge" data-toggle="tab"></a></li>
+          </ul>
+        </section>
+
+        <section class="tab-content" id="fittext20">
+          <div class="tab-pane fade active" id="Apply"><p>Go to <a href="https://github.com/join" target="_blank">github</a> &amp; create your account</p></div>
+          <div class="tab-pane fade" id="Repo"><p>Go to our <a href="https://github.com/getInternship/Dev" target="_blank">dev</a> | <a href="https://github.com/getInternship/Design" target="_blank">design</a> repositories</p></div>
+          <div class="tab-pane fade" id="Fork"><p>Create your own <a href="https://help.github.com/articles/fork-a-repo#step-1-fork-the-spoon-knife-repository" target="_blank">forked</a> repositories</p></div>
+          <div class="tab-pane fade" id="Clone"><p>Make a <a href="https://help.github.com/articles/fork-a-repo#step-2-clone-your-fork" target="_blank">clone</a> of your forked repository</p></div>
+          <div class="tab-pane fade" id="Pull"><p>With your commits, make a <a href="" target="_blank">pull request</a>  to our repositories</p></div>
+          <div class="tab-pane fade" id="Merge"><p>Wait for a call from us, if your commits were <a href="http://infratab.in/#team" target="_blank">merged</a></p></div>
+        </section>  
+
+        <section>
+          <ul class="max-text" id="fittext18">
+            <li><img src="img/max-repo.png" alt=""> Dev</li>
+            <li><img src="img/max-repo.png" alt=""> Design</li>
+          </ul>
+        </section>
+
+  </div>
+</div>
+
+<!--  Copy to Clipboard  -->
+<!--  Copy to Clipboard  -->
 <script type="text/javascript" src="js/mootools-core-1.4.5.js"></script>
 <script type="text/javascript" src="js/ZeroClipboard.js"></script>
 <script type="text/javascript">
@@ -161,7 +266,7 @@
             var clip = new ZeroClipboard.Client();
             //event
             clip.addEventListener('mousedown',function() {
-            	console.log(document.getElementById('box-content').innerHTML);
+              console.log(document.getElementById('box-content').innerHTML);
                 clip.setText(document.getElementById('box-content').innerHTML);
             });
             // clip.addEventListener('complete',function(client,text) {
@@ -173,7 +278,7 @@
         
     });
 </script>
-
+>
 
 </body>
 </html>

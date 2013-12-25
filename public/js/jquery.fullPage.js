@@ -13,7 +13,7 @@
 			"verticalCentered" : true,
 			'resize' : true,
 			'slidesColor' : [],
-			'anchors':['home', 'stipend', 'life@infratab', 'apply', 'lastPage'],
+			'anchors':['home', 'stipend', 'apply', 'lastPage'],
 			'scrollingSpeed': 700,
 			'easing': 'easeInQuart',
 			'menu': '#menu',

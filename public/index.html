@@ -10,13 +10,13 @@
   <meta name="description" content="Apply for Intership at Banglore" />
   <meta name="keywords"  content="intership in banglore, Html intership in banglore, Javascript intership in banglore, startup career in banglore" />
 
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Pacifico:400' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500,700|Open+Sans:400,700,800,600' rel='stylesheet' type='text/css'>
+  <!-- font-family: 'Ubuntu', sans-serif; font-family: 'Open Sans', sans-serif; -->
 
   <!-- Bootstrap -->
-  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css"/>
-  <!-- Font Awesome -->
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css"/>  <!-- Font Awesome -->
   <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
+  <link rel="stylesheet" type="text/css" href="css/font-icon-style.css">
   <!-- FullPage -->
   <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css"/>
 
@@ -42,44 +42,17 @@
     $(document).ready(function() {
 
       // fullPage Custom script
-
       var pepe = $.fn.fullpage({ slidesColor: ['#fff4d4', '#fff4d4', '#fff4d4', '#fff4d4', '#fff4d4'] });  
 
       // Bootstrap Tooltip
-
       $('#menu a').tooltip('hide');
 
       // Bootstrap TAB
-
       $('#applyTab a:first').tab('show');
       $('#stipendTab a:first').tab('show');
 
       // Window Resize - Auto Refresh
-
       $(window).resize(function(){location.reload();}); 
-
-      $("#fittext1").fitText();
-      $("#fittext2").fitText(0.2);
-      $("#fittext3").fitText(0.3);
-      $("#fittext4").fitText(0.4);
-      $("#fittext5").fitText(0.5);
-      $("#fittext6").fitText(0.6);
-      $("#fittext7").fitText(0.7);
-      $("#fittext8").fitText(0.8);
-      $("#fittext9").fitText(0.9);
-      $("#fittext10").fitText(1.0);
-      $("#fittext11").fitText(1.1, { minFontSize: '10em', maxFontSize: '20em' });
-      $("#fittext12").fitText(1.2);
-      $("#fittext121").fitText(1.2);
-      $("#fittext13").fitText(1.3);
-      $("#fittext14").fitText(1.4);
-      $("#fittext15").fitText(1.5);
-      $("#fittext16").fitText(1.6);
-      $("#fittext17").fitText(1.7);
-      $("#fittext18").fitText(1.8);
-      $("#fittext19").fitText(1.9);
-      $("#fittext20").fitText(2.0);
-      $("#fittext130").fitText(13.0);
 
     });
 
@@ -101,12 +74,11 @@
 </head>
 <body>
 
-<section id="fittext130">
+<section>
 <ul id="menu">
-	<li data-menuanchor="home"><a href="#home" data-toggle="tooltip" data-placement="left" title="Home"><i class="fa fa-home fa-3x"></i></a></li>
-	<li data-menuanchor="stipend"><a href="#stipend" data-toggle="tooltip" data-placement="left" title="Stipend"><i class="fa fa-rupee fa-3x"></i></a></li>
-	<li data-menuanchor="life@infratab"><a href="#life@infratab" data-toggle="tooltip" data-placement="left" title="Life&nbsp;@&nbsp;infratab"><i class="fa fa-question fa-3x"></i></a></li>
-	<li data-menuanchor="apply"><a href="#apply" data-toggle="tooltip" data-placement="left" title="Apply"><i class="fa fa-group fa-2x"></i></a></li>
+	<li data-menuanchor="home"><a href="#home" data-toggle="tooltip" data-placement="left" title="Home"><span class="icon icon-home"></span></a></li>
+	<li data-menuanchor="stipend"><a href="#stipend" data-toggle="tooltip" data-placement="left" title="Stipend"><span class="icon icon-rupee"></span></a></li>
+	<li data-menuanchor="apply"><a href="#apply" data-toggle="tooltip" data-placement="left" title="Apply"><span class="icon icon-apply-menu"></span></a></li>
 </ul>
 </section>
 
@@ -118,7 +90,7 @@
         <li><h1 id="fittext8">Even <span>batman</span> <br /> needs an intern</h1 ></li>
         <li><img src="img/robin.jpg" width="200" height="300" alt="Robin Image" align="right"></li>
       </ul>
-       <p id="fittext11">infratab <span>&nbsp;</span> interns</p>
+       <p>infratab <span class="icon icon-heart"></span> interns</p>
   </div>  
 </div>
 
@@ -130,32 +102,32 @@
         <h2 id="fittext12">Apprenticeship</h2>
 
         <ul id="stipendTab">
-          <li><a href="#one" data-toggle="tab"></a></li>
-          <li><a href="#two" data-toggle="tab"></a></li>
-          <li><a href="#three" data-toggle="tab"></a></li>
-          <li><a href="#Four" data-toggle="tab"></a></li>
+          <li><a href="#one" data-toggle="tab"><span class="icon icon-calendar-1"></span></a></li>
+          <li><a href="#two" data-toggle="tab"><span class="icon icon-money-12"></span></a></li>
+          <li><a href="#three" data-toggle="tab"> <span class="icon icon-user-infinity"></span></a></li>
+          <li><a href="#Four" data-toggle="tab"> <span class="icon icon-bar-pie-chart"></span></a></li>
         </ul>
       </section>
 
-      <section class="tab-content" id="fittext19">
+      <section class="tab-content">
         <div class="tab-pane fade active" id="one">
         	<p>First month is probation</p>
-        	<p class="mini">and is only <img src="img/calender-3.png" class="first" alt=""> days a week</p>
+        	<p>and is only <span class="icon icon-calendar-3"></span> days a week</p>
         </div>
 
         <div class="tab-pane fade" id="two">
         	<p>Starts from &#8377;12,000/- per month</p>
-        	<p class="mini">you are very good? <img src="img/rupee-img.png" class="second" alt=""> stipend is negotiable</p>
+        	<p>you are very good? <span class="icon icon-money-rupee"></span> stipend is negotiable</p>
         </div>
 
         <div class="tab-pane fade" id="three">
         	<p>Minimum 2 months. You can go on for ever</p>
-        	<p class="mini">stipend increases by <img src="img/500-rupee.png" class="third" alt=""> every month after the probation</p>
+        	<p>stipend increases by <span class="icon icon-money-500"></span> every month after the probation</p>
         </div>
 
         <div class="tab-pane fade" id="Four">
         	<p>Work is in data visualization</p>
-        	<p class="mini" style="line-height:120px;">can result in <img src="img/final-img.png" class="last" alt=""> a full time position</p>
+        	<p>can result in <img src="img/final-img.png" alt=""> a full time position</p>
         </div>
       </section>  
 
@@ -163,30 +135,22 @@
 </div>
 
 <div class="section" id="section2">
-	 <div class="intro stipend">
-      <section class="yellow-bg">
-        <h2 id="fittext12">Life @ infratab</h2>
-      </section>
-  </div>
-</div>
-
-<div class="section" id="section3">
   <div class="intro apply">
 
     <section class="yellow-bg">
-      <h2 id="fittext121">Apply <a href="#"><img src="img/github-octocat.png" alt="github octocat Image"></a></h2>
-
+      <h2>Apply <a href="#"><span class="icon icon-octocat"></span></a></h2> 
+        
       <ul id="applyTab">
-        <li><a href="#Apply" data-toggle="tab"></a></li>
-        <li><a href="#Repo" data-toggle="tab"></a></li>
-        <li><a href="#Fork" data-toggle="tab"></a></li>
-        <li><a href="#Clone" data-toggle="tab"></a></li>
-        <li><a href="#Pull" data-toggle="tab"></a></li>
-        <li><a href="#Merge" data-toggle="tab"></a></li>
+        <li><a href="#Apply" data-toggle="tab"><span class="icon icon-apply"></span></a></li>
+        <li><a href="#Repo" data-toggle="tab"><span class="icon icon-repo"></span></a></li>
+        <li><a href="#Fork" data-toggle="tab"><span class="icon icon-forked"></span></a></li>
+        <li><a href="#Clone" data-toggle="tab"><span class="icon icon-clone"></span></a></li>
+        <li><a href="#Pull" data-toggle="tab"><span class="icon icon-pull"></span></a></li>
+        <li><a href="#Merge" data-toggle="tab"><span class="icon icon-merge"></span></a></li>
       </ul>
     </section>
 
-    <section class="tab-content" id="fittext20">
+    <section class="tab-content">
       <div class="tab-pane fade active" id="Apply"><p>Go to <a href="https://github.com/join" target="_blank">github</a> &amp; create your account</p></div>
       <div class="tab-pane fade" id="Repo"><p>Go to our <a href="https://github.com/getInternship/Dev" target="_blank">dev</a> | <a href="https://github.com/getInternship/Design" target="_blank">design</a> repositories</p></div>
       <div class="tab-pane fade" id="Fork"><p>Create your own <a href="https://help.github.com/articles/fork-a-repo#step-1-fork-the-spoon-knife-repository" target="_blank">forked</a> repositories</p></div>
@@ -196,9 +160,9 @@
     </section>  
 
     <section>
-      <ul class="max-text" id="fittext18">
-        <li><img src="img/max-repo.png" alt=""> Dev</li>
-        <li><img src="img/max-repo.png" alt=""> Design</li>
+      <ul class="max-text">
+        <li><span class="icon icon-repo"></span> Dev</li>
+        <li><span class="icon icon-repo"></span> Design</li>
       </ul>
     </section>
 

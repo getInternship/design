@@ -1,8 +1,19 @@
  @CHARSET "ISO-8859-1";
+
+/* font-family: 'corbertregular'; */
+@font-face {
+    font-family: 'corbertregular';
+    src: url('../fonts/corbert/Corbert-Regular-webfont.eot');
+    src: url('../fonts/corbert/Corbert-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/corbert/Corbert-Regular-webfont.woff') format('woff'),
+         url('../fonts/corbert/Corbert-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/corbert/Corbert-Regular-webfont.svg#corbertregular') format('svg');
+    font-weight: normal; font-style: normal;}
+
 /* Reset CSS
  * --------------------------------------- */
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
-form,fieldset,input,textarea,p,blockquote,th,td {padding: 0; margin: 0; font-family: 'Ubuntu', sans-serif;}
+form,fieldset,input,textarea,p,blockquote,th,td {padding: 0; margin: 0; font-family: 'corbertregular';}
 a{text-decoration:none;}
 table {border-spacing:0;}
 fieldset,img {border:0;}
@@ -58,7 +69,7 @@ ul#stipendTab {width:80%; margin: 0 auto; padding:0;}
 ul#stipendTab li {display:inline-block; width:auto; margin:0 auto; padding:3em 4em 1em 4em; }
 ul#stipendTab li a {float-left; text-align:center; vertical-align:middle; cursor:pointer; font-size:6em;}
 ul#stipendTab li a:hover,ul#stipendTab li.active a{color: #ed8027;}
-.tab-content p:first-child {font-size:3.5em; }
+.tab-content p:first-child {font-size:2.75em; }
 .tab-content p:nth-child(2) {width:80%; background:#ffefbe; border-radius:0.2em; color:#ff5412; font-size:2em; text-align:center; margin:2% auto; padding:0.5em; vertical-align: middle;}
 .tab-content p span {font-size:3em; vertical-align: middle; padding: 0 0.1em}
 .tab-content p:nth-child(2) img {width:16%;}
@@ -71,7 +82,8 @@ ul#applyTab {width:100%; margin:2.5em auto 1em auto; padding:0;}
 ul#applyTab li {display:inline-block; width:auto; margin:0 auto; padding:1em 3em; }
 ul#applyTab li a {float-left; text-align:center; vertical-align:middle; cursor:pointer;font-size:4em;}
 ul#applyTab li a:hover, ul#applyTab li.active a{color: #ed8027;}
-.tab-content p {color:#ff5412; font-size:3em; text-align:center; margin:2.5% auto;}
+
+.tab-content p {color:#ff5412; font-size:2.5em; text-align:center; margin:2.5% auto;}
 .tab-content p a {padding:0 5px; background:#4ffdc8; color:#ff5412; }
 .tab-content p a:hover { background:#ff9229; cursor:pointer; color:#ff5412; }
 
@@ -79,7 +91,7 @@ ul.max-text {width:100%;}
 ul.max-text li { display:inline-block; vertical-align:middle; cursor:pointer; font-size:8em; font-weight:bold; color:#ff5412;}
 ul.max-text li:first-child {width:40%;}
 ul.max-text li:last-child {width:50%; border-left:2px solid #ff9229;}
-ul.max-text li span {float:none; vertical-align:middle;}
+ul.max-text li span {float:none; vertical-align:middle; margin-top:-1em;}
 ul.max-text li:first-child span {width:18%;}
 ul.max-text li:last-child span {width:15%;}
 ul.max-text li:hover {color:#ff9229;}

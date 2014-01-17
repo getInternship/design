@@ -37,11 +37,18 @@ ul#menu li a:hover, #menu li.active a{opacity: 1;color:#ed8027;}
 
 .section{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;overflow-y:scroll;overflow-x:hidden;}
 
-.row {width:80%; margin:0 auto;position:relative;top:25%; padding:3em;}
+.row {width:80%; margin:0 auto;position:relative;top:18%; padding:3em;}
 .row.main {background:#ffefbe; text-align:center;}
-.row.main div.col-lg-8{vertical-align: bottom; text-align:center;}
+/*.row.main div.col-lg-8{vertical-align: bottom; text-align:center;}
 .row.main div.col-lg-8 {background:transparent url(../img/batman.png) no-repeat 75% 0%; background-size: 50%;}
-.row.main div.col-lg-8:hover{background:transparent url(../img/batman-h.png) no-repeat 75% 0%;cursor:pointer;background-size:50%;}
+.row.main div.col-lg-8:hover{background:transparent url(../img/batman-h.png) no-repeat 75% 0%;cursor:pointer;background-size:50%;}*/
+
+.main li { display:inline-block; width:auto; vertical-align:top;}
+.main li:first-child, .home li:last-child {width:15%;}
+.main li:nth-child(2) { display:inline-block; width:66%; background:transparent url(../img/batman.png) no-repeat 76% 0%; background-size: 50%;}
+.main li:nth-child(2):hover {background:transparent url(../img/batman-h.png) no-repeat 76% 0%; cursor:pointer;background-size: 50%;}
+.main li:nth-child(2) h1 {color:#ff5412;font-size:6em !important;line-height:1.4em;font-weight:bold;vertical-align:top;margin:0;padding-top:0.3em;}
+
 .row p {text-align:right;color:#ffb345;vertical-align:middle;font-size:1.8em !important;font-weight:bold;}
 .row p span{color:#e84c3d;vertical-align:middle;font-size:1.8em !important;font-weight:bold;} 
 .row p span:hover{color:#c1392b;}
@@ -71,10 +78,10 @@ h1.responsive-text a span {font-size:0.9em;}
 
 @media (min-width: 480px) {
 
-	
+	ul#menu li a { font-size: 3em !important;}
 }
 
-@media (max-width: 480px) {
-	ul#menu li a { font-size: 2em !important;}
+@media (max-width: 1200px) {
+	ul#menu li a { font-size: 3em !important;}
 	.row.repo div.right {border-right:none;}
 }

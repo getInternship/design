@@ -48,6 +48,7 @@
 
       // Fittext
       $(".responsive-text").fitText(); 
+      $("#fittext2").fitText(1.2);
 
       // Window Resize - Auto Refresh
       // $(window).resize(function(){location.reload();});
@@ -84,9 +85,11 @@
 <div class="section home" id="section0">
 
    <div class="row main">
-      <div class="col-lg-2"><img src="img/batman.jpg" alt="Batman Image"></div>
-      <div class="col-lg-8"><h1 class="responsive-text">Even <span>batman</span> <br/> needs an intern</h1></div>
-      <div class="col-lg-2"><img src="img/robin.jpg" alt="Robin Image"></div>     
+      <ul>
+        <li><img src="img/batman.jpg" width="100%" alt="Batman Image" align="left"></li>
+        <li><h1 id="fittext2">Even <span>batman</span> <br /> needs an intern</h1 ></li>
+        <li><img src="img/robin.jpg" width="100%" alt="Robin Image" align="right"></li>
+      </ul>   
    </div>
 
    <div class="row"><p class="responsive-text">infratab<span class="icon icon-heart responsive-text"></span>interns</p></div> 
@@ -166,13 +169,12 @@
 
    </div> 
 
-   <div class="row repo col-lg-9 col-lg-offset-3">  
-      <div class="col-lg-5 col-lg-offset-2 right"><span class="icon icon-repo"></span><span class="text">Dev</span></div>
-      <div class="col-lg-4 col-lg-offset-1 left"><span class="icon icon-repo"></span><span class="text">Design</span></div>
+   <div class="row repo">  
+      <div class="col-lg-5 right" align="center"><span class="icon icon-repo"></span><span class="text">Dev</span></div>
+      <div class="col-lg-4 col-lg-offset-1 left" align="center"><span class="icon icon-repo"></span><span class="text">Design</span></div>
    </div>
 
 </div>
-
 
 </body>
 </html>

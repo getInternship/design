@@ -2,47 +2,42 @@
 <html>
 
 <head>    
-  <title>Internships, Apprenticeships|Get Internship</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Internships, Apprenticeships | Get Internship</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta name="title" content="Get internships in Banglore" />
-  <meta name="description" content="Apply for Internships at Banglore" />
-  <meta name="keywords"  content="Internships, Apprenticeships, Get Internship, Html Internships in banglore, Apprenticeships in banglore, Javascript internships in banglore, startup career in banglore" />
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <meta name="title" content="Get internships in Banglore" />
+   <meta name="description" content="Apply for Internships at Banglore" />
+   <meta name="keywords"  content="Internships, Apprenticeships, Get Internship, Html Internships in banglore, Apprenticeships in banglore, Javascript internships in banglore, startup career in banglore" />
 
-  <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500,700|Open+Sans:400,700,800,600' rel='stylesheet' type='text/css'>
-  <!-- font-family: 'Ubuntu', sans-serif; font-family: 'Open Sans', sans-serif; -->
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css"/>
 
-  <!-- Bootstrap -->
-  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css"/>  <!-- Font Awesome -->
-  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
-  <link rel="stylesheet" type="text/css" href="css/font-icon-style.css">
-  <!-- FullPage -->
-  <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css"/>
+   <!-- FullPage CSS -->
+   <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css"/>
 
-  <!--  Less -->
-  <!--  <link rel="stylesheet/less" type="text/css" href="less/style.less" /> -->
-  <!--  <script src="js/less-1.5.0.min.js" type="text/javascript"></script> -->
+   <!-- Font Awesome CSS -->
+   <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
+   <link rel="stylesheet" type="text/css" href="css/font-icon-style.css">
 
-  <!--  jquery  -->
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+   <!--  Jquery -->
+   <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+   <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
 
-  <!--  Bootstrap  -->
-  <script src="bootstrap/js/bootstrap.min.js"></script>
+   <!--  Bootstrap JS -->
+   <script src="bootstrap/js/bootstrap.min.js"></script>
 
-  <!--  fullPage Javascript - Master -->
-  <script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
-  <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+   <!--  FullPage JS -->
+   <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+   <script type="text/javascript" src="js/jquery.fullPage.js"></script>
 
-  <script type="text/javascript" src="js/jquery.fittext.js"></script>
-
-  <script type="text/javascript">
+   <!--  Custom JS -->
+   <script type="text/javascript">
 
     $(document).ready(function() {
 
       // fullPage Custom script
-      var pepe = $.fn.fullpage({ slidesColor: ['#fff4d4', '#fff4d4', '#fff4d4', '#fff4d4', '#fff4d4'] });  
+      $.fn.fullpage({ slidesColor: ['#fff4d4', '#fff4d4', '#fff4d4', '#fff4d4', '#fff4d4'] }); 
 
       // Bootstrap Tooltip
       $('#menu a').tooltip('hide');
@@ -51,8 +46,11 @@
       $('#applyTab a:first').tab('show');
       $('#stipendTab a:first').tab('show');
 
+      // Fittext
+      $(".responsive-text").fitText(); 
+
       // Window Resize - Auto Refresh
-      $(window).resize(function(){location.reload();}); 
+      // $(window).resize(function(){location.reload();});
 
     });
 
@@ -74,73 +72,79 @@
 </head>
 <body>
 
-<section>
+<!-- Sticky Right Menu -->
 <ul id="menu">
-	<li data-menuanchor="home"><a href="#home" data-toggle="tooltip" data-placement="left" title="Home"><span class="icon icon-home"></span></a></li>
-	<li data-menuanchor="stipend"><a href="#stipend" data-toggle="tooltip" data-placement="left" title="Stipend"><span class="icon icon-rupee"></span></a></li>
-	<li data-menuanchor="apply"><a href="#apply" data-toggle="tooltip" data-placement="left" title="Apply"><span class="icon icon-apply-menu"></span></a></li>
+   <li data-menuanchor="home"><a href="#home" data-toggle="tooltip" data-placement="left" title="Home"><span class="icon icon-home"></span></a></li>
+   <li data-menuanchor="stipend"><a href="#stipend" data-toggle="tooltip" data-placement="left" title="Stipend"><span class="icon icon-rupee"></span></a></li>
+   <li data-menuanchor="apply"><a href="#apply" data-toggle="tooltip" data-placement="left" title="Apply"><span class="icon icon-apply-menu"></span></a></li>
 </ul>
-</section>
 
-<div class="section" id="section0">
 
-  <div class="intro home">
-      <ul class="yellow-bg">
-        <li><img src="img/batman.jpg" width="200" height="300" alt="Batman Image" align="left"></li>
-        <li><h1 id="fittext8">Even <span>batman</span> <br /> needs an intern</h1 ></li>
-        <li><img src="img/robin.jpg" width="200" height="300" alt="Robin Image" align="right"></li>
+<!-- Home Page -->
+<div class="section home" id="section0">
+
+   <div class="row main">
+      <div class="col-lg-2"><img src="img/batman.jpg" alt="Batman Image"></div>
+      <div class="col-lg-8"><h1 class="responsive-text">Even <span>batman</span> <br/> needs an intern</h1></div>
+      <div class="col-lg-2"><img src="img/robin.jpg" alt="Robin Image"></div>     
+   </div>
+
+   <div class="row"><p class="responsive-text">infratab<span class="icon icon-heart responsive-text"></span>interns</p></div> 
+
+</div>
+
+
+<!-- Apprenticeship Page -->
+<div class="section stipend" id="section1">
+
+   <div class="row secondary">
+
+      <h1 class="responsive-text">Apprenticeship</h1>
+
+      <ul class="row nav nav-pills nav-justified" id="stipendTab">
+        <li><a href="#one" data-toggle="tab"><span class="icon icon-calendar-1"></span></a></li>
+        <li><a href="#two" data-toggle="tab"><span class="icon icon-money-12"></span></a></li>
+        <li><a href="#three" data-toggle="tab"><span class="icon icon-user-infinity"></span></a></li>
+        <li><a href="#Four" data-toggle="tab"><span class="icon icon-bar-pie-chart"></span></a></li>
       </ul>
-       <p>infratab <span class="icon icon-heart"></span> interns</p>
-  </div>  
+
+   </div>
+
+   <div class="row tab-content">
+
+      <div class="tab-pane fade active" id="one">
+         <p>First month is probation</p>
+         <p>and is only <span class="icon icon-calendar-3"></span> days a week</p>
+      </div>
+
+      <div class="tab-pane fade" id="two">
+         <p>Starts from &#8377; &nbsp; 12,000/- per month</p>
+         <p>you are very good? <span class="icon icon-money-rupee"></span> stipend is negotiable</p>
+      </div>
+
+      <div class="tab-pane fade" id="three">
+         <p>Minimum 2 months. You can go on for ever</p>
+         <p>stipend increases by <span class="icon icon-money-500"></span> every month after the probation</p>
+      </div>
+
+      <div class="tab-pane fade" id="Four">
+         <p>Work is in data visualization</p>
+         <p>can result in <img src="img/final-img.png" alt="" width="12%"> a full time position</p>
+      </div>
+
+   </div>  
+
 </div>
 
-<div class="section" id="section1">
-	<div class="intro stipend">
 
-      <section class="yellow-bg">
+<!-- Apply Page -->
+<div class="section apply" id="section2">
 
-        <h2 id="fittext12">Apprenticeship</h2>
+   <div class="row secondary">
 
-        <ul id="stipendTab">
-          <li><a href="#one" data-toggle="tab"><span class="icon icon-calendar-1"></span></a></li>
-          <li><a href="#two" data-toggle="tab"><span class="icon icon-money-12"></span></a></li>
-          <li><a href="#three" data-toggle="tab"> <span class="icon icon-user-infinity"></span></a></li>
-          <li><a href="#Four" data-toggle="tab"> <span class="icon icon-bar-pie-chart"></span></a></li>
-        </ul>
-      </section>
+      <h1 class="responsive-text">Apply <a href="#"><span class="icon icon-octocat"></span></a></h1>
 
-      <section class="tab-content">
-        <div class="tab-pane fade active" id="one">
-        	<p>First month is probation</p>
-        	<p>and is only <span class="icon icon-calendar-3"></span> days a week</p>
-        </div>
-
-        <div class="tab-pane fade" id="two">
-        	<p>Starts from &#8377;12,000/- per month</p>
-        	<p>you are very good? <span class="icon icon-money-rupee"></span> stipend is negotiable</p>
-        </div>
-
-        <div class="tab-pane fade" id="three">
-        	<p>Minimum 2 months. You can go on for ever</p>
-        	<p>stipend increases by <span class="icon icon-money-500"></span> every month after the probation</p>
-        </div>
-
-        <div class="tab-pane fade" id="Four">
-        	<p>Work is in data visualization</p>
-        	<p>can result in <img src="img/final-img.png" alt=""> a full time position</p>
-        </div>
-      </section>  
-
-	</div>		
-</div>
-
-<div class="section" id="section2">
-  <div class="intro apply">
-
-    <section class="yellow-bg">
-      <h2>Apply <a href="#"><span class="icon icon-octocat"></span></a></h2> 
-        
-      <ul id="applyTab">
+      <ul class="row nav nav-pills nav-justified" id="applyTab">
         <li><a href="#Apply" data-toggle="tab"><span class="icon icon-apply"></span></a></li>
         <li><a href="#Repo" data-toggle="tab"><span class="icon icon-repo"></span></a></li>
         <li><a href="#Fork" data-toggle="tab"><span class="icon icon-forked"></span></a></li>
@@ -148,26 +152,27 @@
         <li><a href="#Pull" data-toggle="tab"><span class="icon icon-pull"></span></a></li>
         <li><a href="#Merge" data-toggle="tab"><span class="icon icon-merge"></span></a></li>
       </ul>
-    </section>
 
-    <section class="tab-content">
+   </div>
+
+   <div class="row tab-content">
+
       <div class="tab-pane fade active" id="Apply"><p>Go to <a href="https://github.com/join" target="_blank">github</a> &amp; create your account</p></div>
       <div class="tab-pane fade" id="Repo"><p>Go to our <a href="https://github.com/getInternship/Dev" target="_blank">dev</a> | <a href="https://github.com/getInternship/Design" target="_blank">design</a> repositories</p></div>
       <div class="tab-pane fade" id="Fork"><p>Create your own <a href="https://help.github.com/articles/fork-a-repo#step-1-fork-the-spoon-knife-repository" target="_blank">forked</a> repositories</p></div>
       <div class="tab-pane fade" id="Clone"><p>Make a <a href="https://help.github.com/articles/fork-a-repo#step-2-clone-your-fork" target="_blank">clone</a> of your forked repository</p></div>
-      <div class="tab-pane fade" id="Pull"><p>With your commits, make a <a href="" target="_blank">pull request</a>  to our repositories</p></div>
+      <div class="tab-pane fade" id="Pull"><p>With your commits, make a <a href="" target="_blank">pull request</a> to our repositories</p></div>
       <div class="tab-pane fade" id="Merge"><p>Wait for a call from us, if your commits were <a href="http://infratab.in/#team" target="_blank">merged</a></p></div>
-    </section>  
 
-    <section>
-      <ul class="max-text">
-        <li><span class="icon icon-repo"></span> Dev</li>
-        <li><span class="icon icon-repo"></span> Design</li>
-      </ul>
-    </section>
+   </div> 
 
-  </div>
+   <div class="row repo col-lg-9 col-lg-offset-3">  
+      <div class="col-lg-5 col-lg-offset-2 right"><span class="icon icon-repo"></span><span class="text">Dev</span></div>
+      <div class="col-lg-4 col-lg-offset-1 left"><span class="icon icon-repo"></span><span class="text">Design</span></div>
+   </div>
+
 </div>
+
 
 </body>
 </html>

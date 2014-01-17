@@ -1,5 +1,4 @@
  @CHARSET "ISO-8859-1";
-
 /* font-family: 'corbertregular'; */
 @font-face {
     font-family: 'corbertregular';
@@ -9,33 +8,18 @@
          url('../fonts/corbert/Corbert-Regular-webfont.ttf') format('truetype'),
          url('../fonts/corbert/Corbert-Regular-webfont.svg#corbertregular') format('svg');
     font-weight: normal; font-style: normal;}
-
-/* Reset CSS
- * --------------------------------------- */
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
-form,fieldset,input,textarea,p,blockquote,th,td {padding: 0; margin: 0; font-family: 'corbertregular';}
-a{text-decoration:none;}
-table {border-spacing:0;}
-fieldset,img {border:0;}
-address,caption,cite,code,dfn,em,strong,th,var {font-weight: normal; font-style: normal;}
-strong{font-weight: bold;}
-ol,ul {list-style: none; margin:0; padding:0;} 
-caption,th {text-align: left;}
-h1,h2,h3,h4,h5,h6 {font-weight:normal;font-size:100%;margin:0;padding:0;color:#444;}
-q:before,q:after {content:'';}
-abbr,acronym {border: 0;}
-
 /* Custom CSS
  * --------------------------------------- */
-body, html { margin:0; padding:0; background: #fff4d4;}
-img {outline: 0; max-width: 100%; height: auto;}
-a, a:hover {text-decoration: none;}
+body {margin0; padding:0; font-family:"corbertregular"}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {font-family:"corbertregular"; font-weight:bold; color:#ff5412;}
+a, a:hover {outline: none; text-decoration: none;}
+img {border:0; outline: none;}
+ul, li{list-style:none;margin:0;padding:0;}
 
 #superContainer {height:100%; position:relative;}
-.scrollable{overflow:scroll;}
+.scrollable {overflow-y: scroll;}
 .easing{ -webkit-transition: all 0.7s ease-out; -moz-transition: all 0.7s ease-out; -o-transition: all 0.7s ease-out;
     transition: all 0.7s ease-out;}
-.wrap{margin-left: auto;margin-right: auto;width: 100%; position: relative;} 
 
 ::-webkit-scrollbar{width:7px;height:7px;}
 ::-webkit-scrollbar-track{border-radius:1em;background-color:rgba(50,50,50,0.1);}
@@ -43,120 +27,54 @@ a, a:hover {text-decoration: none;}
 ::-webkit-scrollbar-thumb{border-radius:1em;background-color:rgba(50,50,50,0.3);}
 ::-webkit-scrollbar-thumb:hover{background-color:rgba(50,50,50,0.6);}
 
-#menu {position: fixed; right: 3%; top:35%; z-index: 70; list-style: none; margin: 0; padding: 0;}
-#menu li {padding: 0; text-align:center; line-height: 4em;}
-#menu li a {padding:2%; background: transparent; color: #428fd2; opacity: 0.2;line-height: 1em; font-size: 3em;}
-#menu li a:hover, #menu li.active a{opacity: 1; color: #ed8027;}
+ul#menu {height: 100%;position:fixed;right:2.5%;top:33%;z-index:9990;text-align:center;}
+ul#menu li {text-align:center; margin:1.5em 0;}
+ul#menu li a { background: transparent; color: #428fd2; opacity: 0.4; font-size: 2.75em;}
+ul#menu li a:hover, #menu li.active a{opacity: 1;color:#ed8027;}
+.tooltip {font-size:1em;}
+.tooltip-inner {background-color:#2b6ac4;}
+.tooltip.left .tooltip-arrow {border-left-color:#2b6ac4;}
 
-.section{position: relative; text-align:center; padding-top:3% !important; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
-.intro {width:76%; margin:0 auto;}
-.intro.home {padding-top:9em !important;}
-.yellow-bg {background:#ffefbe; border-radius:0.5em; padding:3em 1em;}
+.section{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;overflow-y:scroll;overflow-x:hidden;}
 
-.home li { display:inline-block; width:auto; vertical-align:top;}
-.home li:first-child, .home li:last-child {width:15%;}
-.home li:nth-child(2) {width:60%; background:transparent url(../img/batman.png) no-repeat 79% 20%; background-size: 50%;}
-.home li:nth-child(2):hover {background:transparent url(../img/batman-h.png) no-repeat 79% 20%; cursor:pointer;background-size: 50%;}
-.home li:nth-child(2) h1 {color:#ff5412;font-size:6em;line-height:1em;font-weight:bold;vertical-align:top;margin:0;padding-top:0.6em;}
+.row {width:80%; margin:0 auto;position:relative;top:25%; padding:3em;}
+.row.main {background:#ffefbe; text-align:center;}
+.row.main div.col-lg-8{vertical-align: bottom; text-align:center;}
+.row.main div.col-lg-8 {background:transparent url(../img/batman.png) no-repeat 75% 0%; background-size: 50%;}
+.row.main div.col-lg-8:hover{background:transparent url(../img/batman-h.png) no-repeat 75% 0%;cursor:pointer;background-size:50%;}
+.row p {text-align:right;color:#ffb345;vertical-align:middle;font-size:1.8em !important;font-weight:bold;}
+.row p span{color:#e84c3d;vertical-align:middle;font-size:1.8em !important;font-weight:bold;} 
+.row p span:hover{color:#c1392b;}
 
-.home p {color:#ffb345; text-align:right; padding-right:3%; margin-top:3%; vertical-align: middle; font-size:1.75em; line-height: 0; font-weight: bold;}
-.home p span{color:#e84c3d; font-size: 2em;vertical-align: middle;line-height:0;}
-.home p span:hover{color:#c1392b;}
+h1.responsive-text {font-size:6.6em !important;line-height:1.3em;}
+.nav-pills > li.active > a:hover, .nav-pills > li > a:hover, .nav-pills > li.active > a {color:#ff5412 !important;background-color:transparent !important;}
+.nav-pills > li a span {font-size:5em !important;text-align:center;font-weight:normal;}
+.row.secondary {top:8%;background:#ffefbe;text-align:center;padding:0em 2em; }
 
-.stipend h2 {color:#ff5412;font-size:6em;line-height:1em;font-weight:bold;vertical-align:top; margin:0;padding-top:0.5em; margin:0; padding:0;}
+.row.tab-content {top:8%;}
+.row.tab-content p {text-align:center;color:#ff5412;}
+.row.tab-content .tab-pane p:first-child {font-size:2.8em !important;padding-bottom:0.8em;}
+.row.tab-content .tab-pane p:nth-child(2) {background:#ffefbe;font-size:2em !important;padding:1em 0;}
+.row.tab-content .tab-pane p:nth-child(2) span {color:#ff5412 !important;font-size:3em !important;font-weight:normal;}
 
-ul#stipendTab {width:80%; margin: 0 auto; padding:0;}
-ul#stipendTab li {display:inline-block; width:auto; margin:0 auto; padding:3em 4em 1em 4em; }
-ul#stipendTab li a {float-left; text-align:center; vertical-align:middle; cursor:pointer; font-size:6em;}
-ul#stipendTab li a:hover,ul#stipendTab li.active a{color: #ed8027;}
-.tab-content p:first-child {font-size:2.75em; }
-.tab-content p:nth-child(2) {width:80%; background:#ffefbe; border-radius:0.2em; color:#ff5412; font-size:2em; text-align:center; margin:2% auto; padding:0.5em; vertical-align: middle;}
-.tab-content p span {font-size:3em; vertical-align: middle; padding: 0 0.1em}
-.tab-content p:nth-child(2) img {width:16%;}
+h1.responsive-text a span {font-size:0.9em;}
+.row.tab-content .tab-pane p:first-child a {background:#4ffdc8;color:#ff5412;padding:0 0.25em 0.25em 0.25em;}
+.row.tab-content .tab-pane p:first-child a:hover {background:#ff9229;}
 
-.apply h2 {color:#ff5412;font-size:6em;line-height:1em;font-weight:bold;vertical-align:top; margin:0;padding-top:0.5em;}
-.apply h2 span {font-size:1.25em;}
-.apply h2 span:hover {color: #ed8027;}
+.row.repo  {top:2%;text-align:left;vertical-align:middle;}
+.row.repo > div {padding-bottom:1em;}
+.row.repo div span.icon {font-size:8em !important;font-weight:normal;color:#ff5412;}
+.row.repo div span.text {font-size:8em;vertical-align:top;font-weight:bold !important;margin:0;padding-left:0.2em;line-height: 0.8em;color:#ff5412;}
+.row.repo div.right {border-right:2px solid #ff5412;}
+.row.repo div.left span.text {text-align:center;}
+.row.repo > div:hover span {color:#ff9229;cursor:pointer;}
 
-ul#applyTab {width:100%; margin:2.5em auto 1em auto; padding:0;}
-ul#applyTab li {display:inline-block; width:auto; margin:0 auto; padding:1em 3em; }
-ul#applyTab li a {float-left; text-align:center; vertical-align:middle; cursor:pointer;font-size:4em;}
-ul#applyTab li a:hover, ul#applyTab li.active a{color: #ed8027;}
+@media (min-width: 480px) {
 
-.tab-content p {color:#ff5412; font-size:2.5em; text-align:center; margin:2.5% auto;}
-.tab-content p a {padding:0 5px; background:#4ffdc8; color:#ff5412; }
-.tab-content p a:hover { background:#ff9229; cursor:pointer; color:#ff5412; }
-
-ul.max-text {width:100%;}
-ul.max-text li { display:inline-block; vertical-align:middle; cursor:pointer; font-size:8em; font-weight:bold; color:#ff5412;}
-ul.max-text li:first-child {width:40%;}
-ul.max-text li:last-child {width:50%; border-left:2px solid #ff9229;}
-ul.max-text li span {float:none; vertical-align:middle; margin-top:-1em;}
-ul.max-text li:first-child span {width:18%;}
-ul.max-text li:last-child span {width:15%;}
-ul.max-text li:hover {color:#ff9229;}
-
-@media screen and (max-width : 321px) { 
-
-.section {overflow-y: scroll;}
-
-#menu li {line-height: 2em;}
-#menu li a {font-size: 1.5em;line-height: 0.2em !important;}
-
-.home li:nth-child(2) h1 {font-size:1em;}
-.home p {vertical-align: middle; font-size:0.8em;}
-.home p span{font-size:1.75em;vertical-align: middle;}
-
-.stipend h2 {font-size:1.5em;line-height:0.2em;}
-ul#stipendTab li {padding:3em 0.3em 0em 0.3em; }
-ul#stipendTab li a {font-size:1.75em;}
-
-.tab-content p:first-child {font-size:1em; font-weight: bold;}
-.tab-content p:nth-child(2) {font-size:0.8em; }
-.tab-content p span {font-size:3em; padding: 0 0.1em;}
-.tab-content p:nth-child(2) { vertical-align: middle;}
-
-.apply h2 {font-size:2em;}
-.apply h2 span {font-size:1.2em;}
-
-ul#applyTab {margin:0.5em auto 0 auto;}
-ul#applyTab li {padding:0.5em 1em 0em 1em; }
-ul#applyTab li a {font-size:2em;}
-
-ul.max-text li {font-size:1.5em;}
-
+	
 }
 
-@media screen and (min-width: 800px) { 
-
-.section {overflow-y: scroll;}
-
-/*
-#menu li {line-height: 4em;}
-#menu li a {font-size: 2em; line-height: 0.5em !important;}
-
-.home li:nth-child(2) h1 {font-size:1em;}
-.home p {vertical-align: middle; font-size:1em;}
-.home p span{font-size:2em;vertical-align: middle;}
-
-.stipend h2 {font-size:2.5em;line-height:0.4em;}
-ul#stipendTab li {padding:4em 0.6em 0em 0.6em; }
-ul#stipendTab li a {font-size:2.75em;}
-
-.tab-content p:first-child {font-size:2em; font-weight: bold;}
-.tab-content p:nth-child(2) {font-size:1.2em; }
-.tab-content p span {font-size:4em; padding: 0 0.2em;}
-.tab-content p:nth-child(2) { vertical-align: middle;}
-
-.apply h2 {font-size:2.5em;}
-.apply h2 span {font-size:1.4em;}
-
-ul#applyTab {margin:1em auto 0 auto;}
-ul#applyTab li {padding:1em 2em 0em 2em; }
-ul#applyTab li a {font-size:2.5em;}
-
-ul.max-text li {font-size:2.5em;}*/
-
+@media (max-width: 480px) {
+	ul#menu li a { font-size: 2em !important;}
+	.row.repo div.right {border-right:none;}
 }
-
-@media screen and (max-width: 1024px) { }

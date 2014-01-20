@@ -1,0 +1,24 @@
+{
+  "name": "application-name",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "connect-flash": "~0.1.1",
+    "passport": "~0.1.17",
+    "express": "~3.4.2",
+    "underscore": "~1.5.2",
+    "fs-extra": "~0.8.0",
+    "d3": "~3.3.8",
+    "svg2png": "~1.0.0",
+    "xmljson": "~0.2.0",
+    "passport-local": "~0.1.6",
+    "password-generator": "~0.2.1",
+    "nodemailer": "~0.5.3",
+    "csv": "~0.3.6",
+    "excel-parser": "~0.2.1",
+    "node-windows": "~0.1.5"
+  }
+}
